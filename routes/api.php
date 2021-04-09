@@ -26,12 +26,12 @@ Route::get('/notes', 'NoteController@all');
 
 Route::get('/note/{id}', 'NoteController@one');
 
-Route::post('/note', 'NoteController@new'); // ADD
-/*
-Route::put('/note/{id}', '');
+Route::post('/note', 'NoteController@new');
 
-Route::delete('/note/{id}', '');
-*/
+Route::put('/note/{id}', 'NoteController@edit');
+
+Route::delete('/note/{id}', 'NoteController@delete');
+
 
 
 
